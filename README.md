@@ -1,5 +1,5 @@
 ﻿# Django-React
-This repo is the tutorial for better understanding of backend (Django) and frontend (react).
+This repo is the tutorial for better understanding of backend (Django) and frontend (react) we will build a todo app that will perfrom crud functionality.
 <h1>Backend</h1>
 <h2>Django features:</h2>
 High-level abstraction: Django provides a high-level, abstracted approach to web development, allowing developers to focus on application logic rather than low-level details.
@@ -33,5 +33,16 @@ Now you have successfully setup  the django open the backend(whatever your env f
 <ul>
   <li>Command forr creating an app is <b> "django-admin startapp (app_name)
 "</b></li>
+  <li> After creating an app First of all you Have to Register In Installed app In <b>settings.py</b> . </li>
+  <li>Now Register You app in <b>Apps.py</b>
+  <b>code for register  : </b>
+  <li>from django.apps import AppConfig
+
+
+class TodoConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'todo'  //app name Todo
+</li>
+  </li>
     <li>Now hit command <b> "python manage.py runserver "</b> and your server will run on 8000 port and you can check you website on port 8000</li>
 </ul>

@@ -19,7 +19,7 @@ Django's REST framework extension simplifies the creation of RESTful APIs, makin
 <li>Now open the folder in vs code or bash or with cmd doesn’t Matter .
 Now you have create a virtual environment in it.</li>
 <li>Command for virtual environment is <b>“pip install virtualenv “</b>.</li>
-<li>After that you have to name the virtual environment whatever you want for which command is <b>“   virtualenv <env_name> “</b>.</li>
+<li>After that you have to name the virtual environment whatever you want for which command is <b>“   virtualenv (env_name) “</b>.</li>
 <li>Now we have hit activate in Scripts folder in the virtual env for this command <b>“ .\myenv\ \Scripts\Activate.ps1".</b></li>
 <li>After that you have to install Django by giving Command<b> “pip install Django “</b>.</li>
 <li>Now After installation you can strt project by giving it command <b>“ Django-admin startporject core” </b>.
@@ -31,7 +31,7 @@ Now you have successfully setup  the django open the backend(whatever your env f
 <p> Basically an app act a module for a functionality e.g. if i want an authentication feature in my website than i will just create an app named authentication and will store all the featues related to the authentication in the that app hence i can reuse it wherever i want in future too.</p>
 <h4>instruction :</h4>
 <ul>
-  <li>Command forr creating an app is <b> "django-admin startapp <app_name>
+  <li>Command forr creating an app is <b> "django-admin startapp (app_name)
 "</b></li>
     <li>Now hit command <b> "python manage.py runserver "</b> and your server will run on 8000 port and you can check you website on port 8000</li>
 </ul>

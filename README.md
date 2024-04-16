@@ -37,12 +37,12 @@ Now you have successfully setup  the django open the backend(whatever your env f
   <li>Now Register You app in <b>Apps.py</b>
     <br>
   <b>code for register  : </b>
-      <br> <h3 text-color: blue>from django.apps import AppConfig  <br>
+      <br> <h3><b>from django.apps import AppConfig  <br>
 class TodoConfig(AppConfig):   <br>
     default_auto_field = 'django.db.models.BigAutoField'
       <br>
     name = 'todo'  //app name Todo
-</h3>
+</b></h3>
 
   </li>
     <li>Now hit command <b> "python manage.py runserver "</b> and your server will run on 8000 port and you can check you website on port 8000</li>

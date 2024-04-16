@@ -38,9 +38,7 @@ Now you have successfully setup  the django open the backend(whatever your env f
     <br>
   <b>code for register  : </b>
       <br>
- """ from django.apps import AppConfig
-  <br>
-
+ """ from django.apps import AppConfig  <br>
 class TodoConfig(AppConfig):   <br>
     default_auto_field = 'django.db.models.BigAutoField'
       <br>

@@ -1,5 +1,13 @@
 ﻿# Django-React
 This repo is the tutorial for better understanding of backend (Django) and frontend (react) we will build a todo app that will perfrom crud functionality.
+<h1>Dependicies to Download</h1>
+<ul>
+ <li>Python</li> 
+ <li>django</li> 
+ <li>django_rest_frmaework</li>
+  <li>CORS</li>
+  <li>React.js</li>
+</ul>
 <h1>Backend</h1>
 <h2>Django features:</h2>
 High-level abstraction: Django provides a high-level, abstracted approach to web development, allowing developers to focus on application logic rather than low-level details.
@@ -47,3 +55,32 @@ class TodoConfig(AppConfig):   <br>
   </li>
     <li>Now hit command <b> "python manage.py runserver "</b> and your server will run on 8000 port and you can check you website on port 8000</li>
 </ul>
+
+<h2>Creating models</h2>
+   <p> in Django models are Python classes that represent the structure and behavior of the data stored in a database. They provide a high-level abstraction for interacting with the database, allowing you to define the fields and relationships of your data in a simple and Pythonic way.</p>
+ <b>code for creating model  : </b>
+      <br> <h3><b>from django.db import models <br>
+class Todo(models.Model):   <br>
+    title = models.CharField(max_length=120)
+      <br>
+   description = models.CharField(max_length=500)
+    <br>
+   completed = models.BooleanField(default=False)
+   <br>
+   def __str__(self) :    <br>
+          return self.title
+</b></h3>
+
+<h2> Registering models</h2>
+In admin.py we will register our created models.. <br>
+ <b>code for Registering models  : </b>
+      <br> <h3><b>from django.contrib import admin <br>
+        from .models import Todo <br>
+class TodoAdmin(admin.ModelAdmin): <br>
+      list_display=("title","description","completed")
+      <br>
+          admin.site.register(Todo,TodoAdmin)
+</b></h3>
+
+
+

@@ -13,13 +13,16 @@ Django boasts an active and dedicated community, providing extensive documentati
 Django's REST framework extension simplifies the creation of RESTful APIs, making it a versatile choice for developing API-driven applications.
 <h2>Development Phase : </h2> 
 <h2>Setup : </h2>
-First of all Install Python.
-Okay lets Start from Basics for backend in python Django first of all we have to create a file in the/folder in a c/drive or on f/drive where you prefer/where you keep the project.
-Now open the folder in vs code or bash or with cmd doesn’t Matter .
-Now you have create a virtual environment in it.
-Command for virtual environment is <b>“pip install virtualenv “</b>.
-After that you have to name the virtual environment whatever you want for which command is <b>“   virtualenv Taha “</b>.
-Now we have hit activate in Scripts folder in the virtual env for this command <b>“ .\myenv\ \Scripts\Activate.ps1".</b>
-After that you have to install Django by giving Command<b> “pip install Django “</b>.
-Now After installation you can strt project by giving it command <b>“ Django-admin startporject core” </b>.
+<ul>
+<li>First of all Install Python.</li>
+<li>Now lets Start from Basics for backend in python Django first of all we have to create a file in the/folder in a c/drive or on f/drive where you prefer/where you keep the project.</li>
+<li>Now open the folder in vs code or bash or with cmd doesn’t Matter .
+Now you have create a virtual environment in it.</li>
+<li>Command for virtual environment is <b>“pip install virtualenv “</b>.</li>
+<li>After that you have to name the virtual environment whatever you want for which command is <b>“   virtualenv Taha “</b>.</li>
+<li>Now we have hit activate in Scripts folder in the virtual env for this command <b>“ .\myenv\ \Scripts\Activate.ps1".</b></li>
+<li>After that you have to install Django by giving Command<b> “pip install Django “</b>.</li>
+<li>Now After installation you can strt project by giving it command <b>“ Django-admin startporject core” </b>.
+  </li></ul>
+
 Now you have successfully setup  the django open the core folder in vscode.

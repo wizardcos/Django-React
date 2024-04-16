@@ -37,11 +37,13 @@ Now you have successfully setup  the django open the backend(whatever your env f
   <li>Now Register You app in <b>Apps.py</b>
     <br>
   <b>code for register  : </b>
+      <br>
  """ from django.apps import AppConfig
+  <br>
 
-
-class TodoConfig(AppConfig):
+class TodoConfig(AppConfig):   <br>
     default_auto_field = 'django.db.models.BigAutoField'
+      <br>
     name = 'todo'  //app name Todo
 """
   </li>

@@ -81,6 +81,7 @@ class TodoAdmin(admin.ModelAdmin): <br>
       <br>
           admin.site.register(Todo,TodoAdmin)
 </b></h3>
+<h2>Creating serializer</h2>
 
-
+<p> </p>
 

@@ -85,4 +85,5 @@ class TodoAdmin(admin.ModelAdmin): <br>
 
 <p> A serializer in Django REST Framework (DRF) is a class responsible for converting complex data types (like Django model instances) into native Python data types (like dictionaries) that can be easily rendered into JSON, XML, or other content types. Serializers also perform the reverse operation, converting input data (usually JSON) into complex data types</p>
 <h2>Now we will foccus on frontend</h2>
+<h3>We will build the frontend in React.js</h3>
 

@@ -1,89 +1,70 @@
-﻿# Django-React
-This repo is the tutorial for better understanding of backend (Django) and frontend (react) we will build a todo app that will perfrom crud functionality.
-<h1>Dependicies to Download</h1>
-<ul>
- <li>Python</li> 
- <li>django</li> 
- <li>django_rest_frmaework</li>
-  <li>CORS</li>
-  <li>React.js</li>
-</ul>
-<h1>Backend</h1>
-<h2>Django features:</h2>
-High-level abstraction: Django provides a high-level, abstracted approach to web development, allowing developers to focus on application logic rather than low-level details.
-Admin interface: The built-in admin interface is a powerful tool for content management, allowing easy creation, update, and deletion of database records without writing custom admin panels.
-URL routing: Django offers a flexible URL routing system, making it straightforward to map URLs to specific views and controllers. This feature is also helpful for developers to generate SEO-friendly URLs.
-Security: Django emphasizes security, offering built-in protections against common web vulnerabilities like CSRF attacks, SQL injection, and XSS (Cross-Site Scripting).
-<h2>Django benefits :</h2>
-Django's high-level abstractions, built-in tools, and convention-over-configuration approach enable developers to build web applications quickly, reducing development time and effort.
-Django supports horizontal scaling and load balancing, making it suitable for handling increased traffic and ensuring application growth as demands expand.
-Django boasts an active and dedicated community, providing extensive documentation, tutorials, and third-party packages, making it convenient to find solutions to common challenges.
-Django's REST framework extension simplifies the creation of RESTful APIs, making it a versatile choice for developing API-driven applications.
-<h1>Development Phase : </h1> 
-<h2>Setup : </h2>
-<ul>
-<li>First of all Install Python.</li>
-<li>Now lets Start from Basics for backend in python Django first of all we have to create a file in the/folder in a c/drive or on f/drive where you prefer/where you keep the project.</li>
-<li>Now open the folder in vs code or bash or with cmd doesn’t Matter .
-Now you have create a virtual environment in it.</li>
-<li>Command for virtual environment is <b>“pip install virtualenv “</b>.</li>
-<li>After that you have to name the virtual environment whatever you want for which command is <b>“   virtualenv (env_name) “</b>.</li>
-<li>Now we have hit activate in Scripts folder in the virtual env for this command <b>“ .\myenv\ \Scripts\Activate.ps1".</b></li>
-<li>After that you have to install Django by giving Command<b> “pip install Django “</b>.</li>
-<li>Now After installation you can strt project by giving it command <b>“ Django-admin startporject core” </b>.
-  </li></ul>
+# Getting Started with Create React App
 
-Now you have successfully setup  the django open the backend(whatever your env folder name is) folder in vscode.
-<h2>Creating an app :</h2>
-<h4> Description :</h4>
-<p> Basically an app act a module for a functionality e.g. if i want an authentication feature in my website than i will just create an app named authentication and will store all the featues related to the authentication in the that app hence i can reuse it wherever i want in future too.</p>
-<h4>instruction :</h4>
-<ul>
-  <li>Command forr creating an app is <b> "django-admin startapp (app_name)
-"</b></li>
-  <li> After creating an app First of all you Have to Register In Installed app In <b>settings.py</b> . </li>
-  <li>Now Register You app in <b>Apps.py</b>
-    <br>
-  <b>code for register  : </b>
-      <br> <h3><b>from django.apps import AppConfig  <br>
-class TodoConfig(AppConfig):   <br>
-    default_auto_field = 'django.db.models.BigAutoField'
-      <br>
-    name = 'todo'  //app name Todo
-</b></h3>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-  </li>
-    <li>Now hit command <b> "python manage.py runserver "</b> and your server will run on 8000 port and you can check you website on port 8000</li>
-</ul>
+## Available Scripts
 
-<h2>Creating models</h2>
-   <p> in Django models are Python classes that represent the structure and behavior of the data stored in a database. They provide a high-level abstraction for interacting with the database, allowing you to define the fields and relationships of your data in a simple and Pythonic way.</p>
- <b>code for creating model  : </b>
-      <br> <h3><b>from django.db import models <br>
-class Todo(models.Model):   <br>
-    title = models.CharField(max_length=120)
-      <br>
-   description = models.CharField(max_length=500)
-    <br>
-   completed = models.BooleanField(default=False)
-   <br>
-   def __str__(self) :    <br>
-          return self.title
-</b></h3>
+In the project directory, you can run:
 
-<h2> Registering models</h2>
-In admin.py we will register our created models.. <br>
- <b>code for Registering models  : </b>
-      <br> <h3><b>from django.contrib import admin <br>
-        from .models import Todo <br>
-class TodoAdmin(admin.ModelAdmin): <br>
-      list_display=("title","description","completed")
-      <br>
-          admin.site.register(Todo,TodoAdmin)
-</b></h3>
-<h2>Creating serializer</h2>
+### `npm start`
 
-<p> A serializer in Django REST Framework (DRF) is a class responsible for converting complex data types (like Django model instances) into native Python data types (like dictionaries) that can be easily rendered into JSON, XML, or other content types. Serializers also perform the reverse operation, converting input data (usually JSON) into complex data types</p>
-<h2>Now we will foccus on frontend</h2>
-<h3>We will build the frontend in React.js</h3>
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
